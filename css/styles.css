@@ -28,9 +28,8 @@ The designs were created to the following widths:
 */
 
 :root {
-  --color-primary: #eb2f64;
-  --color-primary-light: #ff3366;
-  --color-primary-dark: #ba265d;
+  --color-primary: hsl(240, 38%, 20%);
+  --color-primary-grey-blue: hsl(240, 18%, 77%);
 
   --grey-light-1: #faf9f9;
   --grey-light-2: #f4f2f2;
@@ -60,7 +59,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   line-height: 1.6;
   background-image: linear-gradient(
@@ -72,4 +71,39 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+a {
+  text-decoration: none;
+}
+
+.carousel {
+  box-shadow: var(--shadow-dark);
+  margin: 0 auto;
+  padding: 4em;
+}
+
+.carousel__testimonial {
+  display: flex;
+  flex-direction: row;
+  max-width: 80%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.carousel__image__container {
+  background-image: url("../images/pattern-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: fill;
+}
+
+.carousel__image {
+  width: 80%;
 }
