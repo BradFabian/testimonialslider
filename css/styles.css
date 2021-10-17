@@ -77,33 +77,74 @@ body {
   flex-direction: row;
 }
 
-a {
+a,
+button {
   text-decoration: none;
+  cursor: pointer;
+  background-color: white;
+  border: none;
 }
 
 .carousel {
   box-shadow: var(--shadow-dark);
   margin: 0 auto;
-  padding: 4em;
+  max-width: 800px;
 }
 
 .carousel__testimonial {
-  display: flex;
+  display: none;
   flex-direction: row;
-  max-width: 80%;
-  height: auto;
+  max-width: 1448px;
+  height: 70%;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  padding: 2em;
 }
-
+.active {
+  display: flex;
+}
 .carousel__image__container {
   background-image: url("../images/pattern-bg.svg");
-  background-position: center;
+  background-position: 15% 30%;
   background-repeat: no-repeat;
-  object-fit: fill;
+  background-size: contain;
+
+  padding: 4em;
 }
 
 .carousel__image {
-  width: 80%;
+  max-height: 260px;
+  border-radius: 2%;
+  box-shadow: 2px 2px 10px hsl(240deg 18% 77%);
 }
+
+.carousel__content {
+  z-index: 99;
+  max-width: 40%;
+
+  left: 11%;
+  position: relative;
+}
+.carousel__content__text {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #333;
+}
+.carousel-actions {
+  position: relative;
+  max-width: 50px;
+  padding: 5px 6px;
+  border-radius: 16px;
+  box-shadow: 2px 2px 10px hsl(240deg 18% 77%);
+  left: 57%;
+  bottom: 80px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn img {
+  width: 50%;
+}
+/*260px*/
