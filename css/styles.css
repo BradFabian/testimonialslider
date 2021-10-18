@@ -148,9 +148,10 @@ button {
   margin-top: 1em;
   font-size: 1.2rem;
   color: rgb(150, 146, 146);
+  display: flex;
 }
 
-.carousel__content__name span {
+.carousel__content__name .bold {
   font-weight: 700;
   margin-right: 10px;
   color: black;
@@ -218,6 +219,10 @@ button {
     max-width: 75%;
     text-align: center;
     left: 0;
+  }
+
+  .carousel__content__name {
+    flex-direction: column;
   }
 
   .carousel__image__container {
