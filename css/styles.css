@@ -85,6 +85,10 @@ button {
   border: none;
 }
 
+.container {
+  position: absolute;
+}
+
 .carousel {
   box-shadow: var(--shadow-dark);
   margin: 0 auto;
@@ -148,3 +152,25 @@ button {
   width: 50%;
 }
 /*260px*/
+.container__curve {
+  z-index: 20;
+  position: relative;
+  bottom: 100px;
+}
+
+.container__curve__image {
+  height: 50%;
+  width: 50%;
+}
+
+.container__quote {
+  z-index: 40;
+  position: relative;
+  left: 25%;
+  top: 145px;
+}
+
+.container__quote__image {
+  height: 60px;
+  width: 70px;
+}
