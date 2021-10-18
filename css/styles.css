@@ -185,8 +185,10 @@ button {
 }
 
 .container__quote {
-  z-index: 40;
+  z-index: 199;
   position: absolute;
+  height: 60px;
+  width: 70px;
   top: 70px;
   left: 195px;
 }
@@ -199,14 +201,15 @@ button {
 /* iphone devices (ipads, phones, 768px and down) */
 @media only screen and (max-width: 600px) {
   .carousel {
-    width: 80%;
+    width: 100% !important;
+    height: 100%;
+    margin: 0;
   }
   .carousel__testimonial__one,
   .carousel__testimonial__two {
     flex-direction: column-reverse;
     width: 100%;
     height: 100%;
-    padding: 1em;
   }
 
   .carousel__content {
@@ -216,16 +219,51 @@ button {
   }
 
   .carousel__image__container {
-    padding: 2em;
+    padding: 4em;
+    margin-bottom: 3em;
   }
 
   .carousel__image {
-    max-height: 160px;
+    max-height: 250px;
+  }
+
+  .container__curve {
+    bottom: 0;
+    left: 0;
+  }
+
+  .container__curve__image {
+    height: 70%;
+    width: 70%;
+  }
+
+  .carousel-actions {
+    left: 45% !important;
+    bottom: 44% !important;
+  }
+
+  .container__quote {
+    top: 60% !important;
+    left: 40% !important;
+  }
+
+  .container__quote__image {
+    height: 70%;
+    width: 70%;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .carousel {
     width: 90%;
+  }
+
+  .carousel-actions {
+    left: 55%;
+  }
+
+  .container__quote {
+    top: 60px;
+    left: 150px;
   }
 }
